@@ -16,7 +16,7 @@ import com.alibaba.fastjson.JSON;
 
 @SuppressWarnings("unchecked")
 public class BaseResult implements Serializable {
-	private static final long serialVersionUID = 1719385495455011753L;
+	private static final long serialVersionUID = 1L;
 
 	private transient static final Logger log = LoggerFactory.getLogger(BaseResult.class);
 
