@@ -8,7 +8,7 @@ package github.rpcappmodel.domain.result;
  * @param <T>
  */
 public class ModelResult<T> extends BaseResult {
-	private static final long serialVersionUID = -1731185697573008846L;
+	private static final long serialVersionUID = 1L;
 
 	/**
 	 * 根据某id/no去数据表里查询，如果查不到时(没有故障)，success为true而model为null
