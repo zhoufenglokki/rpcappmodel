@@ -32,6 +32,14 @@ public class PersistDO implements Serializable {
 	public void setOptionBit(long flagBit) {
 		this.optionBit = flagBit;
 	}
+	
+	public void addOptionBit(long flagBit) {
+		this.optionBit |= flagBit;
+	}
+
+	public void removeOptionBit(long flagBit) {
+		this.optionBit &= optionBit ^ Long.MAX_VALUE;
+	}
 
 	public void setFeatures(String features) {
 		this.features = JSONObject.parseObject(features, Feature.AllowISO8601DateFormat);
